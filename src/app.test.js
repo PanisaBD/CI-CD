@@ -8,7 +8,7 @@ const { dayOfTheWeek } = require('./app');
  });
  });
  
- test('getDay returns the month of year', () => {
-     const month = monthsOfYear( new Date('2020-11-03') );
-     expect( month ).toBe('November');
- });
+test('getDay returns the month of year', () => {
+    const month = monthsOfYear(new Date(2020, 10, 3)); // 10 = November (0-indexed)
+    expect(month).toBe('November');
+});
