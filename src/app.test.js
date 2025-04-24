@@ -7,6 +7,6 @@ test('getDay returns the long-format day of the week', () => {
 });
 
 test('getDay returns the month of year', () => {
-    const month = monthsOfYear( new Date('3/11/2020') );
-    expect( month ).toBe('November');
+    const month = monthsOfYear(new Date(2020, 10, 3)); // 10 = November (0-indexed)
+    expect(month).toBe('November');
 });
